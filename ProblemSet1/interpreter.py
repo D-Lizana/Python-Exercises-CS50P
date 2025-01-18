@@ -7,3 +7,19 @@
 # For instance, if the user inputs 1 + 1, your program should output 2.0. Assume that, if y is /, then z will not be 0.
 # Note that, just as python itself is an interpreter for Python, so will your interpreter.py be an interpreter for math!
 
+expression = input("Expression: ")
+x, y, z = expression.split(" ")
+
+nx = float(x)
+nz = float(z)
+
+if y == "+":
+    result = nx + nz
+if y == "-":
+    result = nx - nz
+if y == "*":
+    result = nx * nz
+if y == "/":
+    result = nx / nz
+
+print(result)
